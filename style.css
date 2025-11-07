@@ -1,0 +1,218 @@
+.ubuntu-condensed-regular {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-bubbles-regular {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#header {
+    background-image: url("ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#header nav {
+    background-color: #91A8FC;
+
+}
+
+#header nav>div {
+    height: 60px;
+
+}
+
+#bodyHeader {
+    height: calc(100vh - 60px);
+    background-color: rgba(8, 64, 142, 0.329);
+}
+
+.btnAbout {
+    position: relative;
+    top: 0;
+    animation: dow 2s ease-in-out infinite alternate;
+}
+
+@keyframes dow {
+    0% {
+        top: 10px;
+    }
+
+    50% {
+        top: -0px;
+    }
+
+    75% {
+        top: 10px;
+    }
+
+    100% {
+        top: -0px;
+    }
+}
+
+#about {
+    position: relative;
+    padding-left: 30%;
+    background-color: #91A8FC;
+}
+
+.backImg {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 1;
+    background-image: url("./DSC00825.JPG");
+    background-position: top;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 50% 0, 100% 30%, 80% 100%, 0% 100%);
+    animation: clipPath 30s ease-in-out infinite alternate;
+}
+
+@keyframes clipPath {
+    0% {
+        clip-path: polygon(0% 0%, 70% 0, 100% 70%, 80% 100%, 0% 100%);
+    }
+
+    25% {
+        clip-path: polygon(0% 0%, 50% 0, 100% 30%, 80% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 0%, 50% 0, 70% 30%, 80% 100%, 0% 100%);
+    }
+
+    75% {
+        clip-path: polygon(0% 0%, 70% 0, 70% 70%, 80% 100%, 0% 100%);
+    }
+
+    100% {
+        clip-path: polygon(0% 0%, 60% 0, 100% 70%, 80% 100%, 0% 100%);
+    }
+
+
+}
+
+#skill {
+    background-color: #d0daff;
+}
+
+.textAbout {
+    width: calc(100% - 30%);
+    padding: 100px 50px;
+}
+
+.sectTit {
+    width: max-content;
+    background-color: #46599d;
+    border-radius: 40px 0 40px 40px;
+    margin: 20px auto;
+    color: white;
+}
+
+.skilBox>div {
+    padding: 10px 5px;
+}
+
+.skilBox>div>div {
+    background-color: #a9bcffa5;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.skilBox>div>div:hover {
+    transform: translateY(-2px);
+    box-shadow: inset 0px 15px 3px 0px #333333aa, 0px 15px 3px 0px #333333aa;
+
+}
+
+progress {
+    width: 60%;
+    margin-left: -10px;
+    height: 20px;
+    position: relative;
+}
+
+progress::after {
+    content: attr(val);
+    /* background-color: white; */
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.skilBox img {
+    width: 50%;
+}
+
+#projects {
+    background-color: #91A8FC;
+
+}
+
+#projects a {
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 30px;
+}
+
+#contact {
+    background-color: #d0daff;
+}
+
+#contact form {
+    width: max-content;
+    margin: auto;
+    padding: 20px 20px;
+    border-color: lightblue !important;
+    /* background-image: linear-gradient(rgb(184, 165, 18), rgb(167, 169, 60)); */
+}
+
+#contact form input,
+#contact form textarea {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8b8f3;
+
+    border-color: lightblue;
+}
+
+#contact form input[type="submit"] {
+    /* background-color: rgb(121, 150, 33); */
+    color: white;
+}
+
+footer {
+    background-color: #91A8FC;
+    color: white;
+}
